@@ -1,0 +1,179 @@
+Create a premium, futuristic, high-end one-page website for a company named "Akshaya Robotics".
+
+--------------------------------------------------
+
+## 🧠 Brand Identity
+- Company Name: Akshaya Robotics
+- Tagline: Innovation in Robotics & Automation
+- Phone Number: +91 90144661334
+- Industry: Robotics, AI, Automation
+
+--------------------------------------------------
+
+## 🎨 Design System (STRICT RULE - ONLY 3 COLORS)
+- Primary: #0F172A (dark navy / near black)
+- Accent: #6366F1 (indigo)
+- Highlight: #22C55E (neon green)
+
+⚠️ RULES:
+- Do NOT use any extra colors
+- Gradients allowed ONLY between these 3 colors
+- Use glow effects with accent + highlight only
+
+--------------------------------------------------
+
+## ✨ Visual Style
+- Ultra-modern, futuristic UI
+- Inspired by Apple, Tesla, Stripe, AI labs
+- Glassmorphism (blur + transparency cards)
+- Soft shadows + neon glow edges
+- Clean typography, minimal but powerful
+- Fully dark theme
+
+--------------------------------------------------
+
+## 🎬 Animations (CRITICAL)
+- Smooth fade + slide on scroll
+- Parallax scrolling backgrounds
+- Floating elements (robots, particles, shapes)
+- Button hover → glow + scale + pulse
+- 3D tilt cards on hover (mouse-based)
+- Section transitions should feel cinematic
+- Use Framer Motion or GSAP
+
+--------------------------------------------------
+
+## 🧊 3D Effects
+- Add depth to UI layers
+- Cards tilt with mouse movement
+- Floating 3D robotic shapes or AI elements
+- Optional: particle background animation
+- Light reflections + shadow depth
+
+--------------------------------------------------
+
+## 📐 Layout (ONE PAGE WEBSITE)
+
+### 1. HERO SECTION
+- Big bold heading: "Akshaya Robotics"
+- Subtext: "Innovation in Robotics & Automation"
+- CTA buttons:
+  - "Get Started"
+  - "Contact Us"
+- Animated gradient or particle background
+- Floating 3D robotic visuals
+
+--------------------------------------------------
+
+### 2. ABOUT SECTION
+- Short description of robotics & AI services
+- 3 animated glass cards:
+  - AI Solutions
+  - Automation Systems
+  - Robotics Engineering
+- Each card with icon + hover animation
+
+--------------------------------------------------
+
+### 3. SERVICES SECTION
+- Responsive grid layout
+- Each card includes:
+  - Icon
+  - Title
+  - Description
+- Hover → glow + 3D tilt + scale
+
+--------------------------------------------------
+
+### 4. FEATURE / SHOWCASE
+- Highlight futuristic technology
+- Use layered glass cards
+- Add depth and motion animations
+- Include glowing UI elements
+
+--------------------------------------------------
+
+### 5. 🖼️ GALLERY SECTION (IMPORTANT ADDITION)
+
+- Title: "Our Work / Gallery"
+- Create a responsive image grid (masonry or grid)
+- Add hover zoom + glow effect
+- Lightbox preview on click (open full image)
+
+📂 Load images dynamically from folder:
+"C:/Users/kakan/Desktop/photo-20260331T173325Z-3-001/photo"
+
+👉 Implementation requirement:
+- Use React to import all images from folder
+- Example approach:
+  - Use require.context OR manual import
+  - Map through images array and display
+
+👉 Each image:
+- Rounded corners
+- Glass overlay on hover
+- Smooth animation
+
+--------------------------------------------------
+
+### 6. CONTACT SECTION
+- Display clearly:
+  📞 +91 90144661334
+- Add buttons:
+  - Call Now (tel link)
+  - WhatsApp CTA (optional)
+- Add glowing button effects
+
+--------------------------------------------------
+
+### 7. MAP SECTION
+
+Embed Google Map:
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3907005195283!2d78.37991457462815!3d17.4410044012594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb932ecd575185%3A0x579e0ed2a9ab3933!2sMy%20School%20ITALY%20%7C%20Mind%20Space!5e0!3m2!1sen!2sin!4v1774978059993!5m2!1sen!2sin" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+
+--------------------------------------------------
+
+### 8. FOOTER
+- Akshaya Robotics
+- Phone number
+- Minimal clean layout
+- Subtle glow divider
+
+--------------------------------------------------
+
+## ⚡ Technical Requirements
+- React (functional components)
+- Tailwind CSS (custom 3 colors)
+- Framer Motion for animations
+- Fully responsive (mobile + desktop)
+- Smooth scrolling navigation
+- Sticky navbar with blur background
+
+--------------------------------------------------
+
+## 🔍 SEO Optimization
+- Title: "Akshaya Robotics | AI & Automation"
+- Meta description: "Advanced robotics and automation solutions"
+- Use semantic HTML (H1, H2, H3)
+- Optimize performance and loading speed
+
+--------------------------------------------------
+
+## 💎 Extra Premium Features
+- Glow buttons
+- Smooth scrolling navbar
+- Sticky header with blur
+- Optional custom cursor
+- Optional loading animation
+
+--------------------------------------------------
+
+## 🎯 FINAL GOAL
+The website should feel like:
+- High-end futuristic robotics company
+- Smooth, cinematic animations
+- Clean but powerful UI
+- Premium, not template-like
+
+Make it visually stunning, modern, and impressive.
