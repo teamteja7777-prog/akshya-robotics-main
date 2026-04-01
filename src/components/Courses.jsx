@@ -14,7 +14,7 @@ const Courses = () => {
   ];
 
   return (
-    <section id="courses" className="relative py-32 bg-primary">
+    <section id="courses" className="relative py-32 bg-primary overflow-hidden">
       <div className="section-container relative z-10">
         
         <div className="absolute top-0 right-10 md:right-32 w-64 h-64 border-[30px] border-accent/20 rounded-full blur-[2px] -z-10" />

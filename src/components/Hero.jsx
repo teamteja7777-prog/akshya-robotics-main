@@ -40,7 +40,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
-          className="text-[4.5rem] md:text-[8rem] lg:text-[10rem] font-black leading-[0.85] tracking-tighter text-white drop-shadow-2xl flex flex-col items-center relative z-20"
+          className="text-5xl sm:text-[4.5rem] md:text-[8rem] lg:text-[10rem] font-black leading-[0.85] tracking-tighter text-white drop-shadow-2xl flex flex-col items-center relative z-20"
         >
           <span className="block -rotate-2 -ml-8 overflow-visible z-10">AKSHAYA</span>
           <span className="block rotate-2 ml-8 text-transparent bg-clip-text bg-gradient-to-br from-highlight via-green-400 to-emerald-600 drop-shadow-[0_10px_30px_rgba(34,197,94,0.3)] z-20">ROBOTICS</span>
@@ -50,9 +50,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-8 md:mt-12 max-w-2xl bg-white/5 backdrop-blur-2xl p-6 md:p-8 rounded-[3rem] border border-white/20 shadow-2xl relative z-30 transform -rotate-1"
+          className="mt-8 md:mt-12 max-w-2xl bg-white/5 backdrop-blur-2xl p-4 md:p-8 rounded-[2rem] md:rounded-[3rem] border border-white/20 shadow-2xl relative z-30 transform -rotate-1 mx-4 sm:mx-0"
         >
-          <p className="text-xl md:text-3xl font-bold text-gray-200">
+          <p className="text-lg sm:text-xl md:text-3xl font-bold text-gray-200">
             Unleash your imagination. Learn to code, build robots, and construct the future! 
           </p>
         </motion.div>
@@ -61,13 +61,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="mt-12 flex gap-6 z-30"
+          className="mt-8 md:mt-12 flex gap-6 z-30"
         >
           <Link
             to="courses"
             smooth={true}
             duration={500}
-            className="chunky-btn chunky-highlight px-10 py-5 text-2xl md:text-3xl rounded-[2rem] flex items-center gap-3 cursor-pointer z-50 transform hover:scale-105"
+            className="chunky-btn chunky-highlight px-6 py-4 md:px-10 md:py-5 text-xl md:text-3xl rounded-[2rem] flex items-center gap-3 cursor-pointer z-50 transform hover:scale-105"
           >
             PLAY NOW <Rocket size={32} />
           </Link>

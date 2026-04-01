@@ -63,10 +63,10 @@ const Gallery = () => {
                   viewport={{ once: true }}
                   transition={{ type: "spring", stiffness: 50, delay: Math.random() * 0.5 }}
                   style={{ transform: `translate(${xOffset}px, ${yOffset}px) rotate(${rotate}deg)` }}
-                  className="polaroid-pic w-64 md:w-80 group mt-4 z-10"
+                  className="polaroid-pic w-48 md:w-80 group mt-4 z-10"
                   onClick={() => setSelectedImage(src)}
                 >
-                  <div className="w-full h-48 md:h-64 overflow-hidden bg-gray-200 border-2 border-gray-300">
+                  <div className="w-full h-40 md:h-64 overflow-hidden bg-gray-200 border-2 border-gray-300">
                     <img
                       src={src}
                       alt={`Student Work`}

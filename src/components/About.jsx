@@ -26,7 +26,7 @@ const About = () => {
         
         {/* Left Side: Staggered Masonry Cards */}
         <div className="relative h-[500px] w-full perspective-1000 hidden md:block">
-          <motion.div style={{ rotateX }} className="w-full h-full relative" style={{ transformStyle: 'preserve-3d' }}>
+          <motion.div style={{ rotateX, transformStyle: 'preserve-3d' }} className="w-full h-full relative">
             {cards.map((card, i) => (
               <motion.div
                 key={i}
@@ -68,7 +68,7 @@ const About = () => {
         {/* Right Side: Gigantic Typography Overlap */}
         <div className="text-left relative">
           {/* Background Decorative Outline */}
-          <span className="absolute -top-16 -left-10 text-[120px] font-black text-gray-100 select-none z-0">DO</span>
+          <span className="absolute -top-16 -left-4 md:-left-10 text-[80px] md:text-[120px] font-black text-gray-100 select-none z-0 hidden sm:block">DO</span>
           
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -76,7 +76,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative z-10"
           >
-            <h2 className="text-5xl md:text-7xl font-black mb-6 leading-[1.1] text-primary">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-black mb-6 leading-[1.1] text-primary">
               What <br/>Do We Do?
             </h2>
             <p className="text-2xl text-gray-600 font-bold border-l-[8px] border-accent pl-6 py-2">
