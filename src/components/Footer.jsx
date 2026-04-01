@@ -4,7 +4,7 @@ import { Bot, Settings, Rocket, Phone } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="w-full pt-32 pb-16 bg-[#0F172A] flex flex-col items-center justify-center relative overflow-hidden">
-      
+
       {/* Playful Floating SVG Elements */}
       <Bot size={120} className="absolute top-10 left-10 text-white/5 -rotate-12" />
       <Settings size={150} className="absolute bottom-10 right-10 text-white/5 rotate-45" />
@@ -22,7 +22,7 @@ const Footer = () => {
         <Phone size={28} className="text-highlight fill-highlight" /> 
         +91 90144661334
       </div>
-      
+
       <p className="text-gray-400 font-bold mt-8 flex-col sm:flex-row flex items-center gap-3 relative z-10 bg-black/50 px-6 py-2 rounded-full">
         © {new Date().getFullYear()} Akshaya Robotics. Building the future, block by block! <Rocket size={24} className="text-highlight drop-shadow-lg" />
       </p>

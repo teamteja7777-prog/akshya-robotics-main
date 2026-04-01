@@ -7,10 +7,10 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-24 bg-[#EAB308] border-8 border-black overflow-hidden">
       <div className="section-container">
-        
+
         {/* Massive Offset Header */}
         <div className="text-center mb-16 relative">
-          <motion.div 
+          <motion.div
             initial={{ y: -50, rotate: -5 }}
             whileInView={{ y: 0, rotate: -2 }}
             viewport={{ once: true }}
@@ -24,9 +24,9 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          
+
           {/* Big Chunky Arcade Buttons Area */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -74,7 +74,7 @@ const Contact = () => {
             className="h-full min-h-[450px]"
           >
             <div className="w-full h-full bg-white p-4 rounded-[4rem] border-8 border-black shadow-[15px_15px_0_#0F172A] relative overflow-hidden flex flex-col pt-8">
-              
+
               <div className="flex gap-4 justify-center mb-6 px-4">
                  <div className="w-6 h-6 rounded-full bg-red-400 border-2 border-black"></div>
                  <div className="w-6 h-6 rounded-full bg-yellow-400 border-2 border-black"></div>
@@ -89,7 +89,7 @@ const Contact = () => {
 
         </div>
       </div>
-      
+
       {/* Decorative Bottom Outline */}
       <div className="absolute -bottom-8 left-0 w-full h-16 bg-white transform -skew-y-2 border-t-[8px] border-b-[8px] border-black z-10" />
     </section>
