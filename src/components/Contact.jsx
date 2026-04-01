@@ -32,19 +32,19 @@ const Contact = () => {
             viewport={{ once: true }}
             className="flex flex-col gap-8 md:gap-10 pt-4"
           >
-            <div 
-              className="bg-highlight text-primary p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#064e3b] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:rotate-1" 
+            <div
+              className="bg-highlight text-primary p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#064e3b] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:rotate-1"
               onClick={() => window.location.href = 'tel:+9190144661334'}
             >
               <div className="flex justify-center mb-2">
                 <PhoneCall size={60} strokeWidth={2.5} className="animate-bounce md:w-[80px] md:h-[80px]" />
               </div>
               <h3 className="text-3xl md:text-4xl font-black mb-2 uppercase tracking-tight">Call Now</h3>
-              <p className="text-lg sm:text-2xl font-bold font-mono bg-white/50 px-2 sm:px-4 py-2 rounded-full inline-block border-2 border-black max-w-full overflow-hidden text-ellipsis whitespace-nowrap">+91 90144661334</p>
+              <p className="text-lg sm:text-2xl font-bold font-mono bg-white/50 px-2 sm:px-4 py-2 rounded-full inline-block border-2 border-black max-w-full overflow-hidden text-ellipsis whitespace-nowrap">+91 9014466133</p>
             </div>
 
-            <div 
-              className="bg-accent text-white p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#312e81] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:-rotate-1" 
+            <div
+              className="bg-accent text-white p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#312e81] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:-rotate-1"
               onClick={() => window.open('https://wa.me/9190144661334', '_blank')}
             >
               <div className="flex justify-center mb-2">

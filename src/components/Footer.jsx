@@ -19,8 +19,8 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 text-primary text-lg sm:text-xl font-black uppercase tracking-widest bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-full border-4 border-black shadow-[8px_8px_0_#6366F1] relative z-10 mb-8 transform -rotate-1 hover:rotate-1 transition-transform max-w-[90%] mx-auto text-center">
-        <Phone size={28} className="text-highlight fill-highlight" /> 
-        +91 90144661334
+        <Phone size={28} className="text-highlight fill-highlight" />
+        +91 9014466133
       </div>
 
       <p className="text-gray-400 font-bold mt-8 flex-col sm:flex-row flex items-center gap-3 relative z-10 bg-black/50 px-6 py-2 rounded-full">
