@@ -34,7 +34,7 @@ const Contact = () => {
           >
             <div
               className="bg-highlight text-primary p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#064e3b] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:rotate-1"
-              onClick={() => window.location.href = 'tel:+9190144661334'}
+              onClick={() => window.location.href = 'tel:+919014466133'}
             >
               <div className="flex justify-center mb-2">
                 <PhoneCall size={60} strokeWidth={2.5} className="animate-bounce md:w-[80px] md:h-[80px]" />
@@ -45,7 +45,7 @@ const Contact = () => {
 
             <div
               className="bg-accent text-white p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#312e81] rounded-[2rem] md:rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:-rotate-1"
-              onClick={() => window.open('https://wa.me/9190144661334', '_blank')}
+              onClick={() => window.open('https://wa.me/919014466133', '_blank')}
             >
               <div className="flex justify-center mb-2">
                  <MessageCircle size={60} strokeWidth={2.5} className="hover:scale-110 transition-transform origin-bottom md:w-[80px] md:h-[80px]" />
