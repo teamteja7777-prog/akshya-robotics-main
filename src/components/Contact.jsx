@@ -7,10 +7,10 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-24 bg-[#EAB308] border-8 border-black">
       <div className="section-container">
-        
+
         {/* Massive Offset Header */}
         <div className="text-center mb-16 relative">
-          <motion.div 
+          <motion.div
             initial={{ y: -50, rotate: -5 }}
             whileInView={{ y: 0, rotate: -2 }}
             viewport={{ once: true }}
@@ -24,27 +24,27 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          
+
           {/* Big Chunky Arcade Buttons Area */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="flex flex-col gap-8 md:gap-10 pt-4"
           >
-            <div 
-              className="bg-highlight text-primary p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#064e3b] rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:rotate-1" 
+            <div
+              className="bg-highlight text-primary p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#064e3b] rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:rotate-1"
               onClick={() => window.location.href = 'tel:+9190144661334'}
             >
               <div className="flex justify-center mb-2">
                 <PhoneCall size={80} strokeWidth={2.5} className="animate-bounce" />
               </div>
               <h3 className="text-4xl font-black mb-2 uppercase tracking-tight">Call Now</h3>
-              <p className="text-2xl font-bold font-mono bg-white/50 px-4 py-2 rounded-full inline-block border-2 border-black">+91 90144661334</p>
+              <p className="text-2xl font-bold font-mono bg-white/50 px-4 py-2 rounded-full inline-block border-2 border-black">+91 9014466133</p>
             </div>
 
-            <div 
-              className="bg-accent text-white p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#312e81] rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:-rotate-1" 
+            <div
+              className="bg-accent text-white p-6 md:p-8 border-[6px] border-black shadow-[0_15px_0_#312e81] rounded-[3rem] text-center cursor-pointer transform transition-all active:translate-y-[15px] active:shadow-none hover:-rotate-1"
               onClick={() => window.open('https://wa.me/9190144661334', '_blank')}
             >
               <div className="flex justify-center mb-2">
@@ -74,7 +74,7 @@ const Contact = () => {
             className="h-full min-h-[450px]"
           >
             <div className="w-full h-full bg-white p-4 rounded-[4rem] border-8 border-black shadow-[15px_15px_0_#0F172A] relative overflow-hidden flex flex-col pt-8">
-              
+
               <div className="flex gap-4 justify-center mb-6 px-4">
                  <div className="w-6 h-6 rounded-full bg-red-400 border-2 border-black"></div>
                  <div className="w-6 h-6 rounded-full bg-yellow-400 border-2 border-black"></div>
@@ -89,7 +89,7 @@ const Contact = () => {
 
         </div>
       </div>
-      
+
       {/* Decorative Bottom Outline */}
       <div className="absolute -bottom-8 left-0 w-full h-16 bg-white transform -skew-y-2 border-t-[8px] border-b-[8px] border-black z-10" />
     </section>

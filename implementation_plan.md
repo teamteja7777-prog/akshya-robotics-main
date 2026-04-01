@@ -5,13 +5,13 @@ This plan details the implementation of a futuristic, high-end one-page website 
 ## User Review Required
 
 > [!WARNING]
-> **Important Note about the Gallery Images**: Modern web browsers do not allow web pages to load images directly from an external folder on your computer (like `C:/Users/kakan/Desktop/photo-...`) due to security restrictions. 
-> 
+> **Important Note about the Gallery Images**: Modern web browsers do not allow web pages to load images directly from an external folder on your computer (like `C:/Users/kakan/Desktop/photo-...`) due to security restrictions.
+>
 > **Proposed Solution**: I will create a script during the build process to copy these images over to our project's `public/gallery` folder automatically, allowing Vite to serve them dynamically. Is this approach acceptable to you?
 
 ## Proposed Changes
 
-We will execute this project entirely inside the `Akshayarobotics` repository folder. 
+We will execute this project entirely inside the `Akshayarobotics` repository folder.
 
 ### Project Initialization & Configuration
 - Initialize a brand new **React + Vite** app.
@@ -58,7 +58,7 @@ I will create the following semantic, responsive, and animated React components:
 - Hover zoom animations and glow effects.
 
 #### [NEW] `src/components/Contact.jsx` & `src/components/Map.jsx`
-- Layout for the contact info (+91 90144661334) and glowing buttons.
+- Layout for the contact info (+91 9014466133) and glowing buttons.
 - The supplied Google Maps iframe.
 
 #### [NEW] `src/components/Footer.jsx`
