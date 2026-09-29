@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PhoneCall, MessageCircle, MapPin } from 'lucide-react';

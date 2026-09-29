@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Gamepad2, BatteryCharging, BrainCircuit, Trophy } from 'lucide-react';

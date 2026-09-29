@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -12,7 +13,7 @@ export default {
         highlight: '#22C55E'
       },
       fontFamily: {
-        sans: ['Quicksand', 'Nunito', 'sans-serif'],
+        sans: ['var(--font-quicksand)', 'Quicksand', 'Nunito', 'sans-serif'],
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',

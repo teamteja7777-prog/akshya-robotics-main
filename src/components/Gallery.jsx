@@ -1,9 +1,10 @@
+"use client";
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Camera, ZoomIn, AlertCircle } from 'lucide-react';
+import { galleryImages as images } from '../data/galleryImages';
 
-const imageModules = import.meta.glob('../assets/gallery/*.{jpg,JPG,png,jpeg}', { eager: true });
-const images = Object.values(imageModules).map(module => module.default);
 
 // Helper to generate extremely unpredictable random rotations and shifts for polaroid scattering
 const generateRandomStyle = () => {
