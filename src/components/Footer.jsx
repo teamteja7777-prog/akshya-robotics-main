@@ -24,6 +24,15 @@ const Footer = () => {
       <Bot size={120} className="absolute top-10 left-10 text-white/5 -rotate-12 z-0 pointer-events-none" />
       <Settings size={150} className="absolute bottom-10 right-10 text-white/5 rotate-45 z-0 pointer-events-none" />
 
+      {/* Brand Badge Logo */}
+      <div className="mb-8 relative z-10 px-4 text-center">
+        <img
+          src="/badge-logo.png"
+          alt="Akshaya Robotics Badge Logo"
+          className="w-20 h-20 sm:w-24 sm:h-24 object-contain mx-auto drop-shadow-[0_8px_20px_rgba(0,0,0,0.6)]"
+        />
+      </div>
+
       <a 
         href="tel:+919014466133" 
         aria-label="Call Akshaya Robotics at +91 9014466133"
