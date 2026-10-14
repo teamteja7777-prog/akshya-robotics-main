@@ -9,10 +9,10 @@ const Courses = () => {
   const yOffset = useTransform(scrollYProgress, [0, 1], [-50, 50]);
 
   const courses = [
-    { icon: <Gamepad2 size={64} />, title: 'Level 1: Novice Builder', desc: 'Starting from scratch! Build simple toys that move and light up.', color: 'bg-[#22C55E]', text: 'text-primary' },
-    { icon: <BatteryCharging size={64} />, title: 'Level 2: Circuit Master', desc: 'Dive into electronics. Learn how circuits and microcontrollers work together!', color: 'bg-[#6366F1]', text: 'text-white' },
-    { icon: <BrainCircuit size={64} />, title: 'Level 3: Logic Brain', desc: 'Teach robots how to see and think! Introduction to fun, block-based AI logic.', color: 'bg-[#F43F5E]', text: 'text-white' },
-    { icon: <Trophy size={64} />, title: 'Boss Level: Pro', desc: 'Race cars, battle-bots, and obstacle courses. Put your skills to the ultimate test!', color: 'bg-[#EAB308]', text: 'text-primary' },
+    { icon: <Gamepad2 size={64} />, title: 'Level 1: Novice Builder', desc: 'Starting from scratch! Build simple toys that move and light up.', color: 'bg-highlight', text: 'text-primary', shadow: 'shadow-[0_15px_0_#E3000B]', iconBg: 'bg-black/10 text-primary', dotBorder: 'border-black' },
+    { icon: <BatteryCharging size={64} />, title: 'Level 2: Circuit Master', desc: 'Dive into electronics. Learn how circuits and microcontrollers work together!', color: 'bg-accent', text: 'text-white', shadow: 'shadow-[0_15px_0_#080E4B]', iconBg: 'bg-black/20 text-white', dotBorder: 'border-white' },
+    { icon: <BrainCircuit size={64} />, title: 'Level 3: Logic Brain', desc: 'Teach robots how to see and think! Introduction to fun, block-based AI logic.', color: 'bg-white', text: 'text-primary', shadow: 'shadow-[0_15px_0_#E3000B]', iconBg: 'bg-accent text-white', dotBorder: 'border-black' },
+    { icon: <Trophy size={64} />, title: 'Boss Level: Pro', desc: 'Race cars, battle-bots, and obstacle courses. Put your skills to the ultimate test!', color: 'bg-black', text: 'text-highlight', shadow: 'shadow-[0_15px_0_#E3000B]', iconBg: 'bg-highlight text-primary', border: 'border-4 border-highlight', dotBorder: 'border-highlight' },
   ];
 
   return (
@@ -23,15 +23,15 @@ const Courses = () => {
 
         <div className="mb-24 flex items-center gap-6">
           <Gamepad2 size={80} strokeWidth={2.5} className="text-highlight hidden md:block" />
-          <h2 className="text-5xl md:text-8xl font-black leading-none drop-shadow-2xl">
-            Choose Your <br/> <span className="text-accent underline decoration-wavy decoration-highlight">Adventure</span>
+          <h2 className="text-5xl md:text-8xl font-black leading-none drop-shadow-2xl text-white">
+            Choose Your <br/> <span className="text-highlight underline decoration-wavy decoration-accent">Adventure</span>
           </h2>
         </div>
 
         {/* Puzzle/ZigZag Layout */}
         <div className="flex flex-col gap-8 md:gap-4 relative pl-4 md:pl-0">
           {/* Vertical Path Line */}
-          <div className="absolute left-[34px] md:left-1/2 top-0 bottom-0 w-4 bg-white/10 rounded-full transform md:-translate-x-1/2 z-0 hidden md:block"></div>
+          <div className="absolute left-[34px] md:left-1/2 top-0 bottom-0 w-4 bg-white/20 rounded-full transform md:-translate-x-1/2 z-0 hidden md:block"></div>
 
           {courses.map((course, i) => (
             <motion.div
@@ -42,13 +42,13 @@ const Courses = () => {
               transition={{ type: 'spring', bounce: 0.5, delay: 0.1 }}
               className={`flex w-full ${i % 2 === 0 ? 'md:justify-start' : 'md:justify-end'} relative z-10`}
             >
-              <div className={`relative ${course.color} ${course.text} w-full md:w-[45%] rounded-[3rem] p-8 md:p-12 shadow-[0_15px_0_rgba(0,0,0,0.4)] border-8 border-black/10 transform transition-transform hover:-translate-y-4`}>
+              <div className={`relative ${course.color} ${course.text} ${course.border || 'border-8 border-black'} w-full md:w-[45%] rounded-[3rem] p-8 md:p-12 ${course.shadow} transform transition-transform hover:-translate-y-4`}>
                 
                 {/* Connector Dot */}
-                <div className={`absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 border-white ${course.color} z-20 hidden md:block ${i % 2 === 0 ? '-right-[calc(5.5%+2rem)]' : '-left-[calc(5.5%+2rem)]'}`} />
+                <div className={`absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-4 ${course.dotBorder} ${course.color} z-20 hidden md:block ${i % 2 === 0 ? '-right-[calc(5.5%+2rem)]' : '-left-[calc(5.5%+2rem)]'}`} />
 
                 <div className="flex items-start gap-6">
-                  <div className="bg-white/20 p-4 rounded-3xl shrink-0">
+                  <div className={`${course.iconBg} p-4 rounded-3xl shrink-0 flex items-center justify-center`}>
                     {course.icon}
                   </div>
                   <div>

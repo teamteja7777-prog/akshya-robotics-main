@@ -8,9 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0F172A',
-        accent: '#6366F1',
-        highlight: '#22C55E'
+        primary: '#080E4B',
+        secondary: '#FFFFFF',
+        accent: '#E3000B',
+        highlight: '#FFED00',
+        brandRed: '#E3000B',
+        brandYellow: '#FFED00',
+        brandWhite: '#FFFFFF',
+        brandNavy: '#080E4B',
+        brandBlack: '#080E4B',
+        black: '#080E4B',
       },
       fontFamily: {
         sans: ['var(--font-quicksand)', 'Quicksand', 'Nunito', 'sans-serif'],

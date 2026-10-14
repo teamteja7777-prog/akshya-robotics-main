@@ -11,12 +11,24 @@ const Hero = () => {
   const y2 = useTransform(scrollY, [0, 1000], [0, -150]);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden isolate">
       
-      {/* Massive Overlapping Gradient Background Blocks */}
-      <motion.div style={{ y: y1 }} className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-accent/40 rounded-[100px] rotate-12 blur-[80px] origin-center -z-10 animate-pulse" />
-      <motion.div style={{ y: y2 }} className="absolute bottom-10 right-0 w-[500px] h-[500px] bg-highlight/30 rounded-full blur-[100px] -z-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[150vh] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDBMMjQgMTJIMTBPMiAweiIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAzKSIvPjwvc3ZnPg==')] opacity-50 -z-10" />
+      {/* Main Futuristic Robotics Workshop Background */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
+        <img
+          src="/hero-bg.png"
+          alt="Futuristic Robotics Workshop & STEM Laboratory - Akshaya Robotics Hyderabad"
+          className="w-full h-full object-cover object-center brightness-90 contrast-105"
+        />
+        {/* Soft Vignette Overlay to ensure workshop visibility and text readability */}
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+      </div>
+
+      {/* Brand Accent Ambient Glows */}
+      <motion.div style={{ y: y1 }} className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-accent/25 rounded-[100px] rotate-12 blur-[100px] origin-center z-0 pointer-events-none animate-pulse" />
+      <motion.div style={{ y: y2 }} className="absolute bottom-10 right-0 w-[500px] h-[500px] bg-highlight/15 rounded-full blur-[120px] z-0 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 pt-10 flex flex-col items-center justify-center text-center z-10 w-full relative">
         
@@ -24,7 +36,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
-          className="absolute top-0 right-10 md:right-32 text-highlight rotate-12 drop-shadow-[0_10px_10px_rgba(34,197,94,0.5)]"
+          className="absolute top-0 right-10 md:right-32 text-highlight rotate-12 drop-shadow-[0_10px_10px_rgba(255,237,0,0.5)]"
         >
           <Sparkles size={80} strokeWidth={2} />
         </motion.div>
@@ -33,9 +45,22 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-          className="absolute bottom-20 left-10 md:left-20 text-accent -rotate-12 drop-shadow-[0_10px_10px_rgba(99,102,241,0.5)]"
+          className="absolute bottom-20 left-10 md:left-20 text-accent -rotate-12 drop-shadow-[0_10px_10px_rgba(227,0,11,0.5)]"
         >
           <Blocks size={100} strokeWidth={1.5} />
+        </motion.div>
+
+        <motion.div
+          initial={{ scale: 0, rotate: -15 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: "spring", stiffness: 120, delay: 0.2 }}
+          className="mb-4 z-20"
+        >
+          <img 
+            src="/logo.png" 
+            alt="Akshaya Robotics Minifigure Badge Mascot - Kids Robotics Learning Academy" 
+            className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain drop-shadow-[0_15px_30px_rgba(227,0,11,0.5)] animate-float"
+          />
         </motion.div>
 
         <motion.h1
@@ -45,16 +70,16 @@ const Hero = () => {
           className="text-5xl sm:text-[4.5rem] md:text-[8rem] lg:text-[10rem] font-black leading-[0.85] tracking-tighter text-white drop-shadow-2xl flex flex-col items-center relative z-20"
         >
           <span className="block -rotate-2 -ml-8 overflow-visible z-10">AKSHAYA</span>
-          <span className="block rotate-2 ml-8 text-transparent bg-clip-text bg-gradient-to-br from-highlight via-green-400 to-emerald-600 drop-shadow-[0_10px_30px_rgba(34,197,94,0.3)] z-20">ROBOTICS</span>
+          <span className="block rotate-2 ml-8 text-transparent bg-clip-text bg-gradient-to-br from-highlight via-white to-accent drop-shadow-[0_10px_30px_rgba(227,0,11,0.5)] z-20">ROBOTICS</span>
         </motion.h1>
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-8 md:mt-12 max-w-2xl bg-white/5 backdrop-blur-2xl p-4 md:p-8 rounded-[2rem] md:rounded-[3rem] border border-white/20 shadow-2xl relative z-30 transform -rotate-1 mx-4 sm:mx-0"
+          className="mt-8 md:mt-12 max-w-2xl bg-black/60 backdrop-blur-2xl p-4 md:p-8 rounded-[2rem] md:rounded-[3rem] border border-white/20 shadow-2xl relative z-30 transform -rotate-1 mx-4 sm:mx-0"
         >
-          <p className="text-lg sm:text-xl md:text-3xl font-bold text-gray-200">
+          <p className="text-lg sm:text-xl md:text-3xl font-bold text-white">
             Unleash your imagination. Learn to code, build robots, and construct the future! 
           </p>
         </motion.div>
